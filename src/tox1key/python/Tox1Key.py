@@ -204,6 +204,9 @@ class Tox1Key(ToxCore):
     Boot
     """
     T1K_CMD_TRANSFERREQ = 1 
+    T1K_CMD_BLOCKREQ = 2
+    T1K_CMD_BLOCK = 3
+    T1K_CMD_TRANSFERCANCEL = 4
     T1K_TRANSFER_MAX_SIZE = 5000 # max allowed transfer data size
     
     
@@ -262,8 +265,8 @@ class Tox1Key(ToxCore):
 						self.debug("new master {0} added as {1}".format(address,friendNr))
 					if not public_key in self.db:
 						self.db[public_key]={}
-						self.db[public_key]["frames"]={}
-						self.db[public_key]["grants"]={}
+						self.db[public_key]["frames"]={"name" : self.options.instance_name}
+						self.db[public_key]["grants"]={"name" : self.options.instance_name}
 					self.db[public_key]["friend_number"]=friendNr
 		except :
 			traceback.print_exc()
@@ -446,8 +449,8 @@ class Tox1Key(ToxCore):
 		self.verbose("Friend request from {0}: accepted".format(public_key))
 		if not public_key in self.db:
 			self.db[public_key]={}
-			self.db[public_key]["grants"]={}
-			self.db[public_key]["frames"]={}
+			self.db[public_key]["grants"]={"name" : self.options.instance_name}
+			self.db[public_key]["frames"]={"name" : self.options.instance_name}
 		self.db[public_key]["frames"]["name"]= options.instance_name
 
 
@@ -481,8 +484,8 @@ class Tox1Key(ToxCore):
 		self.db[public_key]["confirmation"]
 	except: # initialize the data
 		self.db[public_key]={}
-		self.db[public_key]["grants"]={}
-		self.db[public_key]["frames"]={}
+		self.db[public_key]["grants"]={"name" : self.options.instance_name}
+		self.db[public_key]["frames"]={"name" : self.options.instance_name}
 		self.db[public_key]["confirmation"]=1  #the 1 is just a dummy
 		self.db[public_key]["grantError"]=0  #counting the trials to update the other side
 		self.db[public_key]["frameError"]=0  #counting the trials to update the other side
@@ -569,13 +572,13 @@ class Tox1Key(ToxCore):
 			frameHash=m.group(2)
 			print("grant hash {0}\nframe hash {1}".format(grantHash,frameHash))
 			if options.isDoor: #in case we are a door
-				if True or grantHash!=thisAccount["grantHash"] and thisAccount["grantError"]<options.max_trans_errors: #the user don't have the latest grant table, so send it
+				if grantHash!=thisAccount["grantHash"] and thisAccount["grantError"]<options.max_trans_errors: #the user don't have the latest grant table, so send it
 					self.sendData(friend_number,public_key, thisAccount["grants"])
 					thisAccount["grantError"]+=1
 				else:
 					thisAccount["grantError"]=0
 			else:
-				if True or frameHash!=thisAccount["frameHash"] and thisAccount["frameError"]<options.max_trans_errors: #the user don't have the latest grant table, so send it
+				if frameHash!=thisAccount["frameHash"] and thisAccount["frameError"]<options.max_trans_errors: #the user don't have the latest grant table, so send it
 					self.sendData(friend_number,public_key, thisAccount["frames"])
 					thisAccount["frameError"]+=1
 				else:
@@ -591,7 +594,9 @@ class Tox1Key(ToxCore):
 		sendManager[public_key];
 	except:
 		sendManager[public_key]={}
-	thisData=sendManager[public_key]
+		sendManager[public_key]["send"]={}
+		sendManager[public_key]["receive"]={}
+	thisData=sendManager[public_key]["send"]
 	thisData["id"]=randint(1,9999999)
 	thisData["data"]=bytearray(json.dumps(obj))
 	dataLen=len(thisData["data"])
@@ -609,6 +614,8 @@ class Tox1Key(ToxCore):
 		sendManager[public_key];
 	except:
 		sendManager[public_key]={}
+		sendManager[public_key]["send"]={}
+		sendManager[public_key]["receive"]={}
 	thisData=sendManager[public_key]
 	if len(packed_data)>=20:
 		s = struct.Struct('B 3s I I I I')
@@ -623,23 +630,60 @@ class Tox1Key(ToxCore):
 			if cmd==self.T1K_CMD_TRANSFERREQ:
 				fileSize=unpacked_data[4]
 				blockSize=unpacked_data[5]
-				if fileSize>self.T1K_TRANSFER_MAX_SIZE:
+				if fileSize>self.T1K_TRANSFER_MAX_SIZE: #the data is too big !!
 					return
-				blockSize=blockSize if blockSize<=ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE else ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE
-				thisData["id"]=id
-				thisData["data"]=bytearray(fileSize)
+				blockSize=blockSize if blockSize<=ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE else ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE # choose the blocksize which is allowed on both sides
+				thisData["receive"]["id"]=id
+				thisData["receive"]["data"]=bytearray()
+				thisData["receive"]["fileSize"]=fileSize
+				thisData["receive"]["blockNr"]=0
+				thisData["receive"]["blockSize"]=blockSize
+				self.send_packet_struct (friend_number,self.T1K_CMD_BLOCKREQ, thisData["receive"]["id"],blockSize, thisData["receive"]["blockNr"])
+			if cmd==self.T1K_CMD_BLOCKREQ:
+				blockSize=unpacked_data[4]
+				if blockSize < ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE:
+					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],0, 0)
+					return
+				if id != thisData["send"]["id"]:
+					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],1, 0)
+					return
+				blockNr=unpacked_data[5]
+				if blockNr * blockSize >= len(thisData["send"]["data"]):
+					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],2, 0)
+					return
+				self.send_packet_struct (friend_number,self.T1K_CMD_BLOCK, thisData["send"]["id"],blockSize, blockNr,thisData["send"]["data"][blockNr * blockSize:(blockNr+1) * blockSize])
+			if cmd==self.T1K_CMD_BLOCK:
+				blockSize=unpacked_data[4]
+				if blockSize != thisData["receive"]["blockSize"]: #illegal blockSize, stop
+					return
+				if id != thisData["receive"]["id"]: #illegal id, stop
+					return
+				blockNr=unpacked_data[5]
+				if blockNr != thisData["receive"]["blockNr"]:#illegal blocknr, stop
+					return
+				print("received block nr. {0}".format(blockNr))
+				# store the received bytes
+				thisData["receive"]["data"].extend(packed_data[20:])
+				thisData["receive"]["blockNr"]+=1
+				if thisData["receive"]["blockNr"] * blockSize >= len(thisData["receive"]["data"]): #end of packet reached
+					pprint(thisData["receive"]["data"])
+				else: #request next block
+					self.send_packet_struct (friend_number,self.T1K_CMD_BLOCKREQ, thisData["receive"]["id"],blockSize, thisData["receive"]["blockNr"])
 				
-
+				
+				
     def send_packet_struct(self,friend_number, cmd, integer1, integer2, integer3, attachment=None):
 	values = (160, "t1k", cmd, integer1,integer2, integer3)
 	s = struct.Struct('B 3s I I I I')
-	packed_data = s.pack(*values)
-
+	packed_data = bytearray(s.pack(*values))
+	if attachment != None:
+		packed_data.extend(attachment)
 	print 'Original values:', values
 	print 'Format string  :', s.format
 	print 'Uses           :', s.size, 'bytes'
 	print 'Packed Value   :', binascii.hexlify(packed_data)
-	self.tox_friend_send_lossless_packet(friend_number,packed_data)
+	
+	self.tox_friend_send_lossless_packet(friend_number,str(packed_data))
 
 
     def tox_friend_read_receipt_cb(self, friend_number, message_id):
