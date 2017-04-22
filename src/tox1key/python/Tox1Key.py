@@ -7,6 +7,70 @@ __title__    = "Tox1Key"
 __author__   = "Steffen Koehler"
 __license__  = "GPL3.0"
 
+
+
+__LoreIpsum__="""Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. 
+
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor"""
+
 import sys
 import os
 import time
@@ -207,7 +271,7 @@ class Tox1Key(ToxCore):
     T1K_CMD_BLOCKREQ = 2
     T1K_CMD_BLOCK = 3
     T1K_CMD_TRANSFERCANCEL = 4
-    T1K_TRANSFER_MAX_SIZE = 5000 # max allowed transfer data size
+    T1K_TRANSFER_MAX_SIZE = 50000 # max allowed transfer data size
     
     
     def __init__(self, options):
@@ -265,8 +329,8 @@ class Tox1Key(ToxCore):
 						self.debug("new master {0} added as {1}".format(address,friendNr))
 					if not public_key in self.db:
 						self.db[public_key]={}
-						self.db[public_key]["frames"]={"name" : self.options.instance_name}
-						self.db[public_key]["grants"]={"name" : self.options.instance_name}
+						self.db[public_key]["frames"]={"name" : "frames from "+ self.options.instance_name, "li": __LoreIpsum__}
+						self.db[public_key]["grants"]={"name" : "grants from "+ self.options.instance_name, "li": __LoreIpsum__}
 					self.db[public_key]["friend_number"]=friendNr
 		except :
 			traceback.print_exc()
@@ -370,7 +434,6 @@ class Tox1Key(ToxCore):
         self.debug("Save t1k data to file: {0}".format(self.options.instance_name+self.options.t1k_tmp_file_ext))
 
         with open(self.options.instance_name+self.options.t1k_tmp_file_ext, "w") as f:
-		pprint(self.db)
 		json.dump(self.db, f)
 
         self.debug("Move data to file: {0}".format(self.options.instance_name+self.options.t1k_file_ext))
@@ -449,9 +512,8 @@ class Tox1Key(ToxCore):
 		self.verbose("Friend request from {0}: accepted".format(public_key))
 		if not public_key in self.db:
 			self.db[public_key]={}
-			self.db[public_key]["grants"]={"name" : self.options.instance_name}
-			self.db[public_key]["frames"]={"name" : self.options.instance_name}
-		self.db[public_key]["frames"]["name"]= options.instance_name
+			self.db[public_key]["grants"]={"name" : "grants from "+ self.options.instance_name, "li": __LoreIpsum__}
+			self.db[public_key]["frames"]={"name" : "frames from "+ self.options.instance_name, "li": __LoreIpsum__}
 
 
     def tox_friend_connection_status_cb(self, friend_number, connection_status):
@@ -479,34 +541,32 @@ class Tox1Key(ToxCore):
 
     def send_frame_hash(self, friend_number):
 	public_key=self.tox_friend_get_public_key(friend_number)
-	m = hashlib.md5() #it would be more performant to have this as a global
 	try:
 		self.db[public_key]["confirmation"]
 	except: # initialize the data
 		self.db[public_key]={}
-		self.db[public_key]["grants"]={"name" : self.options.instance_name}
-		self.db[public_key]["frames"]={"name" : self.options.instance_name}
+		self.db[public_key]["grants"]={"name" : "grants from "+ self.options.instance_name, "li": __LoreIpsum__}
+		self.db[public_key]["frames"]={"name" : "frames from "+ self.options.instance_name, "li": __LoreIpsum__}
 		self.db[public_key]["confirmation"]=1  #the 1 is just a dummy
 		self.db[public_key]["grantError"]=0  #counting the trials to update the other side
 		self.db[public_key]["frameError"]=0  #counting the trials to update the other side
+		m = hashlib.md5() #it would be more performant to have this as a global
 		m.update(json.dumps(self.db[public_key]["grants"]))
-		grantHash= m.hexdigest()
+		self.db[public_key]["grantHash"]= m.hexdigest()
+		m = hashlib.md5() #it would be more performant to have this as a global
 		m.update(json.dumps(self.db[public_key]["frames"]))
-		frameHash= m.hexdigest()
-		self.db[public_key]["grantHash"]=grantHash
-		self.db[public_key]["frameHash"]=frameHash
+		self.db[public_key]["frameHash"]=m.hexdigest()
 	if self.db[public_key]["confirmation"]!=-1:
-		message_id = self.tox_friend_send_message(friend_number, ToxCore.TOX_MESSAGE_TYPE_NORMAL, "hashes:"+grantHash+":"+frameHash)
+		message_id = self.tox_friend_send_message(friend_number, ToxCore.TOX_MESSAGE_TYPE_NORMAL, "hashes:"+self.db[public_key]["grantHash"]+":"+self.db[public_key]["frameHash"])
 		self.db[public_key]["confirmation"]=message_id
 		self.verbose("Hash compare sent with msg_id {0}".format(message_id))
 
     def send_frame_hashes(self):
 	    for public_key in self.db:
-		    if self.db[public_key]["confirmation"]!=-1:
-			friend_number= tox_friend_by_public_key(public_key)
-			connection_status=tox_friend_get_connection_status(friend_number)
-			if connection_status == ToxCore.TOX_CONNECTION_TCP or connection_status == ToxCore.TOX_CONNECTION_UDP:
-				self.send_frame_hash(self, friend_number)
+		friend_number= self.tox_friend_by_public_key(public_key)
+		connection_status=self.tox_friend_get_connection_status(friend_number)
+		if connection_status == ToxCore.TOX_CONNECTION_TCP or connection_status == ToxCore.TOX_CONNECTION_UDP:
+			self.send_frame_hash(friend_number)
 					
     def tox_friend_name_cb(self, friend_number, name):
         """
@@ -599,6 +659,11 @@ class Tox1Key(ToxCore):
 	thisData=sendManager[public_key]["send"]
 	thisData["id"]=randint(1,9999999)
 	thisData["data"]=bytearray(json.dumps(obj))
+
+	m = hashlib.md5() #it would be more performant to have this as a global
+	m.update(json.dumps(obj))
+	print "Json MD5: {0}".format( m.hexdigest())
+	
 	dataLen=len(thisData["data"])
 	self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERREQ, thisData["id"],dataLen, ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE)
 	
@@ -621,11 +686,11 @@ class Tox1Key(ToxCore):
 		s = struct.Struct('B 3s I I I I')
 		header=packed_data[:20]
 		unpacked_data = s.unpack(header)
-		print 'Unpacked Values:', unpacked_data
+		#print 'Unpacked Values:', unpacked_data
 		#check for magic header
 		if unpacked_data[1]=="t1k":
-			print "Valid header :-)"
 			cmd=unpacked_data[2]
+			print "cmd received: {0}".format(cmd)
 			id=unpacked_data[3]
 			if cmd==self.T1K_CMD_TRANSFERREQ:
 				fileSize=unpacked_data[4]
@@ -638,24 +703,36 @@ class Tox1Key(ToxCore):
 				thisData["receive"]["fileSize"]=fileSize
 				thisData["receive"]["blockNr"]=0
 				thisData["receive"]["blockSize"]=blockSize
+				print "send Blockreq for block {0}".format(thisData["receive"]["blockNr"])
 				self.send_packet_struct (friend_number,self.T1K_CMD_BLOCKREQ, thisData["receive"]["id"],blockSize, thisData["receive"]["blockNr"])
 			if cmd==self.T1K_CMD_BLOCKREQ:
 				blockSize=unpacked_data[4]
-				if blockSize < ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE:
+				if blockSize > ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE:
+					print "Blockrequest canceled: blockSize {0}> ToxCore.TOX_MAX_CUSTOM_PACKET_SIZE".format( blockSize)
 					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],0, 0)
 					return
+				# now we must reduce the total blockSize by the size of the header
+				reducedblockSize=blockSize- s.size
 				if id != thisData["send"]["id"]:
+					print "Blockrequest canceled: ID {0} <> own ID {1} ".format( id ,thisData["send"]["id"])
 					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],1, 0)
 					return
 				blockNr=unpacked_data[5]
 				if blockNr * blockSize >= len(thisData["send"]["data"]):
+					print "Blockrequest canceled: blockNr {0} too high".format( blockNr)
 					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],2, 0)
 					return
-				self.send_packet_struct (friend_number,self.T1K_CMD_BLOCK, thisData["send"]["id"],blockSize, blockNr,thisData["send"]["data"][blockNr * blockSize:(blockNr+1) * blockSize])
+				m = hashlib.md5() #it would be more performant to have this as a global
+				m.update(thisData["send"]["data"])
+				print "Data MD5: {0}".format(m.hexdigest())
+				print "send Blockreq for block {0}".format(thisData["receive"]["blockNr"])
+				self.send_packet_struct (friend_number,self.T1K_CMD_BLOCK, thisData["send"]["id"],blockSize, blockNr,thisData["send"]["data"][blockNr * reducedblockSize:(blockNr+1) * reducedblockSize])
 			if cmd==self.T1K_CMD_BLOCK:
 				blockSize=unpacked_data[4]
 				if blockSize != thisData["receive"]["blockSize"]: #illegal blockSize, stop
 					return
+				# now we must reduce the total blockSize by the size of the header
+				reducedblockSize=blockSize- s.size
 				if id != thisData["receive"]["id"]: #illegal id, stop
 					return
 				blockNr=unpacked_data[5]
@@ -665,8 +742,19 @@ class Tox1Key(ToxCore):
 				# store the received bytes
 				thisData["receive"]["data"].extend(packed_data[20:])
 				thisData["receive"]["blockNr"]+=1
-				if thisData["receive"]["blockNr"] * blockSize >= len(thisData["receive"]["data"]): #end of packet reached
-					pprint(thisData["receive"]["data"])
+				if thisData["receive"]["blockNr"] * reducedblockSize >= thisData["receive"]["fileSize"]: #end of packet reached
+					m = hashlib.md5() #it would be more performant to have this as a global
+					m.update(thisData["receive"]["data"])
+					thisHash=m.hexdigest()
+					print "Received MD5: {0}".format(thisHash)
+					myObj=json.loads(str(thisData["receive"]["data"]))
+					#pprint (myObj)
+					if options.isDoor:
+						self.db[public_key]["frameHash"]=thisHash
+					else:
+						self.db[public_key]["grantHash"]=thisHash
+					print "new hashes: grantHash {0} frameHash {1}".format(self.db[public_key]["grantHash"],self.db[public_key]["frameHash"])
+					self.db[public_key]["confirmation"]=-1
 				else: #request next block
 					self.send_packet_struct (friend_number,self.T1K_CMD_BLOCKREQ, thisData["receive"]["id"],blockSize, thisData["receive"]["blockNr"])
 				
@@ -678,10 +766,10 @@ class Tox1Key(ToxCore):
 	packed_data = bytearray(s.pack(*values))
 	if attachment != None:
 		packed_data.extend(attachment)
-	print 'Original values:', values
-	print 'Format string  :', s.format
-	print 'Uses           :', s.size, 'bytes'
-	print 'Packed Value   :', binascii.hexlify(packed_data)
+	#print 'Original values:', values
+	#print 'Format string  :', s.format
+	#print 'Uses           :', s.size, 'bytes'
+	#print 'Packed Value   :', binascii.hexlify(packed_data)
 	
 	self.tox_friend_send_lossless_packet(friend_number,str(packed_data))
 
@@ -846,6 +934,7 @@ if __name__ == "__main__":
     options = Tox1KeyOptions(Tox1KeyOptions.loadOptions(cfgfile))
     options.instance_name=instance_name
     options.isDoor=isDoor
+    options.max_trans_errors=5
     bot = Tox1Key(options)
 
     try:
