@@ -923,3 +923,34 @@ class ToxBrokerThread (threading.Thread):
 	def run(self): 
 		self.bot.run(self.stop_event)
 		self.bot.save_file()
+	
+	def setNewData(self,public_key,data):
+		try:
+			self.bot.db[public_key]["confirmation"]=-2  #the -2 is just a dummy, which is never reached
+			self.bot.db[public_key]["grantError"]=0  #counting the trials to update the other side
+			m = hashlib.md5() 
+			if self.bot.options.isDoor:
+				self.bot.db[public_key]["grants"]=data.copy()
+				m.update(json.dumps(self.bot.db[public_key]["grants"]))
+				self.bot.db[public_key]["grantHash"]= m.hexdigest()
+				try:
+					self.bot.db[public_key]["frameHash"]
+				except KeyError: # in case it's not set yet, generate a dummy
+					self.bot.db[public_key]["frameHash"]=m.hexdigest()
+			else:
+				self.bot.db[public_key]["frames"]=data.copy()
+				m.update(json.dumps(self.bot.db[public_key]["frames"]))
+				self.bot.db[public_key]["frameHash"]= m.hexdigest()
+				try:
+					self.bot.db[public_key]["grantHash"]
+				except KeyError: # in case it's not set yet, generate a dummy
+					self.bot.db[public_key]["grantHash"]=m.hexdigest()
+			friend_number= self.bot.tox_friend_by_public_key(public_key)
+			connection_status=self.bot.tox_friend_get_connection_status(friend_number)
+			if connection_status == ToxCore.TOX_CONNECTION_TCP or connection_status == ToxCore.TOX_CONNECTION_UDP:
+				self.bot.send_frame_hash(friend_number)
+		except:
+			pass
+		
+	def getFriendsPublicKeys(self):
+		return list(self.bot.db.keys())

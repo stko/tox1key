@@ -12,12 +12,13 @@ import os
 import time
 import re
 import threading
+from ToxBroker import ToxBrokerThread, ToxBrokerOptions
 
 #debugging stuff
 from pprint import pprint
 import traceback
-from ToxBroker import ToxBrokerThread, ToxBrokerOptions
 
+from random import randint
 
 
 if __name__ == "__main__":
@@ -49,7 +50,10 @@ if __name__ == "__main__":
 	try:
 		while(True):
 			time.sleep(2)
-			print "blub"
+			myData={"value": randint(1,9999999)}
+			friendsList=botThread.getFriendsPublicKeys()
+			for  public_key in friendsList:
+				botThread.setNewData(public_key,myData)
 	except KeyboardInterrupt:
 		pass
 	t_stop.set()
