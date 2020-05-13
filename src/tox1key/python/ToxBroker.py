@@ -554,10 +554,10 @@ class ToxBroker(ToxCore):
 		self.db[public_key]["confirmation"]=1  #the 1 is just a dummy
 		self.db[public_key]["grantError"]=0  #counting the trials to update the other side
 		self.db[public_key]["frameError"]=0  #counting the trials to update the other side
-		m = hashlib.md5() #it would be more performant to have this as a global
+		m = hashlib.md5() 
 		m.update(json.dumps(self.db[public_key]["grants"]))
 		self.db[public_key]["grantHash"]= m.hexdigest()
-		m = hashlib.md5() #it would be more performant to have this as a global
+		m = hashlib.md5()
 		m.update(json.dumps(self.db[public_key]["frames"]))
 		self.db[public_key]["frameHash"]=m.hexdigest()
 	if self.db[public_key]["confirmation"]!=-1:
@@ -664,7 +664,7 @@ class ToxBroker(ToxCore):
 	thisData["id"]=randint(1,9999999)
 	thisData["data"]=bytearray(json.dumps(obj))
 
-	m = hashlib.md5() #it would be more performant to have this as a global
+	m = hashlib.md5() 
 	m.update(json.dumps(obj))
 	print "Json MD5: {0}".format( m.hexdigest())
 	
@@ -726,10 +726,10 @@ class ToxBroker(ToxCore):
 					print "Blockrequest canceled: blockNr {0} too high".format( blockNr)
 					self.send_packet_struct (friend_number,self.T1K_CMD_TRANSFERCANCEL, thisData["send"]["id"],2, 0)
 					return
-				m = hashlib.md5() #it would be more performant to have this as a global
+				m = hashlib.md5() 
 				m.update(thisData["send"]["data"])
 				print "Data MD5: {0}".format(m.hexdigest())
-				print "send Blockreq for block {0}".format(thisData["receive"]["blockNr"])
+				print "send Blockreq for block {0}".format(blockNr)
 				self.send_packet_struct (friend_number,self.T1K_CMD_BLOCK, thisData["send"]["id"],blockSize, blockNr,thisData["send"]["data"][blockNr * reducedblockSize:(blockNr+1) * reducedblockSize])
 			if cmd==self.T1K_CMD_BLOCK:
 				blockSize=unpacked_data[4]
@@ -747,7 +747,7 @@ class ToxBroker(ToxCore):
 				thisData["receive"]["data"].extend(packed_data[20:])
 				thisData["receive"]["blockNr"]+=1
 				if thisData["receive"]["blockNr"] * reducedblockSize >= thisData["receive"]["fileSize"]: #end of packet reached
-					m = hashlib.md5() #it would be more performant to have this as a global
+					m = hashlib.md5()
 					m.update(thisData["receive"]["data"])
 					thisHash=m.hexdigest()
 					print "Received MD5: {0}".format(thisHash)

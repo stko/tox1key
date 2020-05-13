@@ -1,5 +1,11 @@
 # Tox 1Key - the decentralized door opening (=access control) system
 
+
+**Info**: This project is depreciated, but it's replaced and sucessfully finalized in [Zuul-AC](https://stko.github.io/zuul-ac/)
+
+
+
+
 WTF is a decentralized door opening system? In the moment it is just a weird proof-of-concept-in-progress, born out of a conflictive set of wishes for a door opening system (which stands here representative for access control in general).
 
 So let us use a door to explain: A door has a lock, and some keys do match that lock. Some people owns these keys, so they can open the door whenever they want.

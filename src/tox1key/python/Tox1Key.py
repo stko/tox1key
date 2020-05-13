@@ -18,43 +18,39 @@ from ToxBroker import ToxBrokerThread, ToxBrokerOptions
 from pprint import pprint
 import traceback
 
-from random import randint
+class Tox1Key:
 
+	def __init__(self, instance_name, isDoor):
+		cfgfile = instance_name+".cfg"
+		self.options = ToxBrokerOptions(ToxBrokerOptions.loadOptions(cfgfile))
+		self.options.instance_name=instance_name
+		self.options.isDoor=isDoor
+		self.options.max_trans_errors=5
+		self.t_stop= threading.Event()
+		self.botThread = ToxBrokerThread(self.options,self.t_stop)
+		self.botThread.start()
+		
+	def getFriends(self): # returns a hash with public_key as key and friend data
+		result={}
+		friendsList=self.botThread.getFriendsPublicKeys()
+		for  public_key in friendsList:
+			result[public_key]={"name":"nobody"}
+		return result
 
-if __name__ == "__main__":
+	def setData(self,public_key,newData):
+		self.botThread.setNewData(public_key,newData)
+		
+	def stop(self):
+		self.t_stop.set()
+		self.botThread.join()
 	
+	def addUser(self,address):
+		if self.options.isDoor:
+			return False
+		try:
+			self.botThread.bot.tox_address_check(address)
+			
+			return True
+		except:
+			return False
 	
-	regexpDoor  = re.compile("--door")
-	isDoor = [True for arg in sys.argv for match in [regexpDoor.search(arg)] if match]
-	regexp  = re.compile("--name=(\w+)")
-	cfgfile = [match.group(1) for arg in sys.argv for match in [regexp.search(arg)] if match]
-
-	if len(cfgfile) == 0:
-		print("Usage: ToxBroker.py --name=<instancename> [--door]")
-		exit(1)
-	instance_name = cfgfile[0]
-	cfgfile = instance_name+".cfg"
-	if len(isDoor) == 0:
-		isDoor = False
-	else:
-		isDoor = isDoor[0]
-	print("Door",isDoor)
-
-	options = ToxBrokerOptions(ToxBrokerOptions.loadOptions(cfgfile))
-	options.instance_name=instance_name
-	options.isDoor=isDoor
-	options.max_trans_errors=5
-	t_stop= threading.Event()
-	botThread = ToxBrokerThread(options,t_stop)
-	botThread.start()
-	try:
-		while(True):
-			time.sleep(2)
-			myData={"value": randint(1,9999999)}
-			friendsList=botThread.getFriendsPublicKeys()
-			for  public_key in friendsList:
-				botThread.setNewData(public_key,myData)
-	except KeyboardInterrupt:
-		pass
-	t_stop.set()
-	botThread.join()
